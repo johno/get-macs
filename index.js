@@ -1,9 +1,9 @@
-var macRegex = require('mac-regex');
+var macRegex = require('mac-regex')
 
-module.exports = function(macs) {
-  if(typeof macs !== 'string') {
-    throw new TypeError('get-macs expects a string');
+module.exports = function (macs) {
+  if (typeof macs !== 'string') {
+    throw new TypeError('get-macs expected a string')
   }
 
-  return macs.match(macRegex());
-};
+  return macs.match(macRegex())
+}
